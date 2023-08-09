@@ -1,4 +1,4 @@
-# BIBWeb - A small bookstore - .NET Core MVC App
+# BIB-1 - A tiny library - .NET Core MVC App
 
 (Learning Project)
 
