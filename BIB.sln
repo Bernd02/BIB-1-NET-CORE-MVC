@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BIBWeb", "BIBWeb\BIBWeb.csproj", "{7607A6B1-31D5-4C94-9897-1966513A2931}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BIBData", "BIBData\BIBData.csproj", "{F9F4FC47-E8DE-49F7-9180-6FBB3C20A71D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIBServices", "BIBServices\BIBServices.csproj", "{24507677-2A8C-4436-90AE-B9DEDBBA4C97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7607A6B1-31D5-4C94-9897-1966513A2931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7607A6B1-31D5-4C94-9897-1966513A2931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7607A6B1-31D5-4C94-9897-1966513A2931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7607A6B1-31D5-4C94-9897-1966513A2931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F4FC47-E8DE-49F7-9180-6FBB3C20A71D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F4FC47-E8DE-49F7-9180-6FBB3C20A71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F4FC47-E8DE-49F7-9180-6FBB3C20A71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F4FC47-E8DE-49F7-9180-6FBB3C20A71D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24507677-2A8C-4436-90AE-B9DEDBBA4C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24507677-2A8C-4436-90AE-B9DEDBBA4C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24507677-2A8C-4436-90AE-B9DEDBBA4C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24507677-2A8C-4436-90AE-B9DEDBBA4C97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BB797AB-7F8A-49AA-A650-5E4AB6B0F955}
+	EndGlobalSection
+EndGlobal

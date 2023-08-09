@@ -1,0 +1,51 @@
+﻿@model UitleenobjectDetailViewModel;
+@{
+	ViewData["Title"] = "Detail";
+}
+
+@if (Model != null) {
+	<h2>@Model.Type <i>@Model.Naam</i></h2>
+	<h4>@Model.Details</h4>
+	<p>Aankoopjaar: @Model.Jaar</p>
+	<p>Kostprijs: @Html.DisplayFor(m => Model.Kostprijs)</p>
+	<p>Status: @Model.Status
+		@if (Model.Status == Status.Uitgeleend) {
+			<span>door @Model.HuidigeUitlener</span>
+		}
+		else if (Model.Status == Status.Gereserveerd) {
+			<span>door @Model.EersetInWachtlijst?.Voornaam @Model.EersetInWachtlijst?.Familienaam</span>
+		}
+	</p>
+	<img class="afbeelding" src="@Model.ImageUrl" />
+	@if (Model.Status == Status.Beschikbaar) {
+		<p>
+			<a class="btn btn-lg btn-info" asp-action="Uitlenen" asp-route-id="@Model.Id">Uitlenen</a>
+		</p>
+	}
+	else {
+		if (Model.Status == Status.Gereserveerd) {
+			// Object is gereserveerd > Moet kunnen worden opgehaald
+			<form method="post" asp-action="ReserveringOphalen" asp-route-itemId="@Model.Id" asp-route-lenerId="@Model.EersetInWachtlijst?.Id">
+				<p>
+					<button class="btn btn-success btn-lg">Reservering ophalen</button>
+				</p>
+			</form>
+		}
+		else {
+			// Object is niet beschikbaar & niet gereserveerd > Moet kunnen worden teruggebracht
+			<form method="post" asp-action="Terugbrengen" asp-route-id="@Model.Id">
+				<p>
+					<button class="btn btn-lg btn-success">Terugbrengen</button>
+				</p>
+			</form>
+		}
+		// Object is niet beschikbaar > Moet kunnen worden gereserveerd
+		<p>
+			<a class="btn btn-lg btn-warning" asp-action="Reserveren" asp-route-id="@Model.Id">Reserveren</a>
+		</p>
+	}
+}
+else {
+	<p>@ViewBag.ErrorMessage</p>
+}
+
