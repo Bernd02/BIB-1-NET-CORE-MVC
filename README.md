@@ -1,4 +1,4 @@
-# BIB-1 - A tiny library - .NET Core MVC App
+# BIB-1 - a tiny library - .NET Core MVC App
 
 (Learning Project)
 
@@ -15,7 +15,7 @@
   
   - Migrations
   
-  - Repository Design
+  - Repository Pattern
   
   - Interface Segregation
   
