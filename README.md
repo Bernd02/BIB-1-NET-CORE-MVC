@@ -53,3 +53,15 @@
 - Run SQL Script
 
 - Run App
+
+-----
+
+## Images
+
+- Product List
+
+![product-list](/BIBWeb/wwwroot/images/readme/product-list.png)
+
+- Product Details
+
+![Alt text](/BIBWeb/wwwroot/images/readme/product-details.png)
