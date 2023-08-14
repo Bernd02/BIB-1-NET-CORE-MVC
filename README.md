@@ -1,4 +1,4 @@
-# BIB-1 - a tiny library - ASP.NET Core MVC App
+# BIB-1 - a tiny library - ASP.NET Core MVC
 
 (Learning Project)
 
